@@ -193,7 +193,9 @@ Navbar
   height: 5rem;
   padding: 1rem;
   display: grid;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -206,6 +208,7 @@ Navbar
 .nav-header {
   display: grid;
   grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
   align-items: center;
 }
 .nav-btn {
@@ -232,6 +235,7 @@ Navbar
     -moz-column-gap: 2rem;
     column-gap: 2rem;
     justify-items: center;
+    -webkit-box-align: center;
     align-items: center;
   }
   .nav-links a {
@@ -277,7 +281,9 @@ Sidebar
   z-index: 4;
   display: grid;
   place-items: center;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
+  -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
@@ -292,6 +298,7 @@ Sidebar
 .sidebar-links a {
   font-size: 2rem;
   text-transform: capitalize;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--clr-grey-5);
   letter-spacing: var(--spacing);
@@ -313,6 +320,7 @@ Sidebar
 .social-icon {
   font-size: 1.5rem;
   color: var(--clr-primary-1);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -326,6 +334,7 @@ Sidebar
   font-size: 3rem;
   background: transparent;
   border: transparent;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   color: #bb2525;
 }
